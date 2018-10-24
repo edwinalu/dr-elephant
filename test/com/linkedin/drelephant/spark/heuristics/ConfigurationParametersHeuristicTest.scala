@@ -163,15 +163,15 @@ class ConfigurationParametersHeuristicTest extends FunSpec with Matchers {
         "Stage 1 has skew in task run time (median is 8.33 min, max is 1.47 hr).\n" +
         "Stage 1: please try to modify the application to make the partitions more even.\n" +
         "Stage 1 has a long median task run time of 8.33 min.\n" +
-          "Stage 1 has 3 tasks, 0 B input, 0 B shuffle read, 0 B shuffle write, and 0 B output.\n" +
-          "Stage 1: please increase the number of partitions.\n" +
-          "Stage 2 has a long median task run time of 10.00 min.\n" +
-          "Stage 2 has 200 tasks, 0 B input, 0 B shuffle read, 0 B shuffle write, and 0 B output.\n" +
-          "Stage 3 has a long median task run time of 5.00 min.\n" +
-          "Stage 3 has 200 tasks, 0 B input, 0 B shuffle read, 0 B shuffle write, and 0 B output.\n" +
-          "Stage 5 has a long median task run time of 16.67 min.\n" +
-          "Stage 5 has 10 tasks, 0 B input, 0 B shuffle read, 0 B shuffle write, and 0 B output.\n" +
-          "Stage 5: please increase the number of partitions."
+        "Stage 1 has 3 tasks, 0 B input, 0 B shuffle read, 0 B shuffle write, and 0 B output.\n" +
+        "Stage 1: please increase the number of partitions.\n" +
+        "Stage 2 has a long median task run time of 10.00 min.\n" +
+        "Stage 2 has 200 tasks, 0 B input, 0 B shuffle read, 0 B shuffle write, and 0 B output.\n" +
+        "Stage 3 has a long median task run time of 5.00 min.\n" +
+        "Stage 3 has 200 tasks, 0 B input, 0 B shuffle read, 0 B shuffle write, and 0 B output.\n" +
+        "Stage 5 has a long median task run time of 16.67 min.\n" +
+        "Stage 5 has 10 tasks, 0 B input, 0 B shuffle read, 0 B shuffle write, and 0 B output.\n" +
+        "Stage 5: please increase the number of partitions."
       val expectedDetails = Map(
         "Current spark.executor.memory" -> "2GB",
         "Current spark.driver.memory" -> "2GB",
